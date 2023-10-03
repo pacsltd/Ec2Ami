@@ -8,11 +8,11 @@ public class Controller {
 
     @RequestMapping
     public String testMe() {
-        return "twatting";
+        return "twatting once again";
     }
 
     @RequestMapping("/wanker")
     public String testMeWanker() {
-        return "wanking_twatting";
+        return "wanking_twatting oh noooo";
     }
 }
