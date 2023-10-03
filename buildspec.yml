@@ -1,14 +1,18 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+    java: corretto17
   build:
     commands:
       - echo Entered the build phase for Ec2Ami project
       - mvn clean package
+      - mv target/Ec2Ami.jar Ec2Ami.jar
   post_build:
     commands:
-      - echo Build completed OK (phew !!)
+      - echo Build completed OK
 artifacts:
   files:
-    - target/Ec2Ami.jar
+    - Ec2Ami.jar
   discard-paths: yes
