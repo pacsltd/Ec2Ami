@@ -8,7 +8,7 @@ public class Controller {
 
     @RequestMapping
     public String testMe() {
-        return "twatting once again";
+        return "twatting once again my lover :)";
     }
 
     @RequestMapping("/wanker")
